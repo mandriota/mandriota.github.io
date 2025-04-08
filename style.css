@@ -1,0 +1,122 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    position: fixed;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0;
+    width: calc(100% - 20vw);
+    background: teal;
+    user-select: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vh;
+}
+
+div#visit-card {
+    transition: 0.5s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5vw;
+    background-color: beige;
+    box-shadow: 0 0 0.2vw whitesmoke;
+}
+
+div#visit-card:hover {
+    transition: 0.125s;
+    width: 99%;
+    margin-left: 0.5%;
+    box-shadow: 0 0 0.2vw black;
+}
+
+div#visit-card-cap {
+    margin-left: 8%;
+    margin-right: 8%;
+    border-bottom-left-radius: 7vh;
+    border-bottom-right-radius: 7vh;
+    background-color: grey;
+    text-align: center;
+    box-shadow: 0 0 0.2vh 0.1vh black;
+}
+
+#visit-card-cap-text {
+    transition: 0.5s;
+    color: beige;
+}
+
+#visit-card-cap-text:hover {
+    transition: 0.125s;
+    color: teal;
+}
+
+div#visit-card-content {
+    margin: 8%;
+    margin-top: 0.5vh;
+}
+
+div#visit-card-content-skill-list {
+    border-radius: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 45vh;
+    overflow-y: scroll;
+    justify-content: center;
+    box-shadow: 0 0 0.2vh 0.1vh black;
+}
+
+a.visit-card-content-skill-elem {
+    transition: 0.5s;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 0 0 0 0.05vw black;
+}
+
+a.visit-card-content-skill-elem:hover {
+    transition: 0.125s;
+    background-color: teal;
+}
+
+.visit-card-content-skill-elem-text {
+    color: beige;
+    margin: 12px;
+}
+
+.visit-card-content-elem-cap-text {
+    color: grey;
+}
+
+svg.icon {
+    transition: 0.5s;
+    stroke: beige;
+    height: 8vh;
+    width: 8vh;
+}
+
+svg.icon:hover {
+    transition: 0.125s;
+    stroke: teal;
+}
+
+@media screen and (orientation: portrait) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    svg.icon {
+        height: 8vw;
+        width: 8vw;
+    }
+}
